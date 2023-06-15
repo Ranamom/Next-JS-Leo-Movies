@@ -1,0 +1,64 @@
+.heroImgBox {
+  width: 1180px;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 18px;
+  position: relative;
+  border: 5px solid rgb(255, 196, 0);
+}
+
+.heroImgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.heroText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 15px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    42deg,
+    rgba(0, 0, 0, 0.9332107843137255) 24%,
+    rgba(255, 231, 0, 0.09287464985994398) 100%
+  );
+  padding: 3rem;
+}
+
+.heroText h1 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.heroText p {
+  padding-bottom: 1.2rem;
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .heroImgBox {
+    width: 90%;
+    height: 50vh;
+    margin: 2rem auto;
+  }
+  .heroText {
+    padding: 1rem;
+  }
+  .heroText h1 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .heroText p {
+    padding-bottom: 1.2rem;
+    width: 90%;
+  }
+}
